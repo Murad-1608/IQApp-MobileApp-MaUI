@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IQApp.SuccessPage"
+             Title="" 
+             BackgroundColor="#E8F5E9">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+        <!-- Icon -->
+        <Image Source="success_icon.png" 
+               WidthRequest="100" 
+               HeightRequest="100"
+               HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand" />
+
+        <!-- Başlıq -->
+        <Label Text="Təbriklər!" 
+               FontSize="36" 
+               TextColor="#388E3C" 
+               FontAttributes="Bold" 
+               HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand"/>
+
+        <!-- Mesaj -->
+        <Label Text="Növbəti səviyyəyə keçmək." 
+               FontSize="18" 
+               TextColor="#4CAF50" 
+               HorizontalOptions="Center"
+               Padding="10,5"
+               Margin="10,10,10,10"/>
+
+        <!-- Button -->
+        <Button Text="Növbəti"
+                BackgroundColor="#388E3C"
+                TextColor="White"
+                VerticalOptions="End"
+                Clicked="Button_Clicked"/>
+    </StackLayout>
+</ContentPage>

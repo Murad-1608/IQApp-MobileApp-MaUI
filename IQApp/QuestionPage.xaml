@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IQApp.QuestionPage"
+             Title="Question">
+    <VerticalStackLayout Padding="20" Spacing="15"
+                         VerticalOptions="Center"  HorizontalOptions="Center">
+        <!-- Mərkəzləşdirmək üçün əlavə edin -->
+
+        <!-- Sual -->
+        <Label x:Name="LblQuestion"
+               FontSize="20" 
+               HorizontalOptions="Center" />
+        <!-- Cavab üçün TextBox -->
+        <Entry x:Name="txt_Answer"
+               Placeholder="Cavabı daxil edin"
+               Keyboard="Numeric"
+               FontSize="18"
+               HorizontalOptions="Center"
+               WidthRequest="200" 
+               HorizontalTextAlignment="Center"/>
+
+        <!-- Təsdiqlə düyməsi -->
+        <Button Text="Enter"
+                FontSize="18"
+                HorizontalOptions="Center" Clicked="Button_Clicked"/>
+
+        <Button Text="Next"
+                FontSize="18"
+                HorizontalOptions="Center" Clicked="Button_Clicked"
+                IsVisible="False"
+                Background="Green"/>
+
+        <!-- Nəticə Mesajı -->
+        <Label x:Name="ResultLabel" 
+               FontSize="18" 
+               TextColor="Green" 
+               HorizontalOptions="Center"
+               IsVisible="False" />
+    </VerticalStackLayout>
+</ContentPage>
